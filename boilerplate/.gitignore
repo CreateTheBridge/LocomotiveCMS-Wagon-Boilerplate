@@ -1,3 +1,4 @@
+.sass-cache*
 .env
 *.rbc
 capybara-*.html
