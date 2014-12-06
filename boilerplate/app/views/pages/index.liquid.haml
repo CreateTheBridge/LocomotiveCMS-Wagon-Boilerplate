@@ -9,8 +9,7 @@ published: true
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
     %title Boilerplate
     {{ 'application.css' | stylesheet_tag }}
-    /[if lt IE 9]
-      {{ 'html5shiv.min.js' | javascript_tag }}
+    {{ 'modernizr.js' | javascript_tag }}
     {% inline_editor %}
   %body
     -#{% include navigation %}
@@ -21,4 +20,3 @@ published: true
           Test
     -#{% include footer %}
     {% endblock %}
-    {{ 'modernizr.js' | javascript_tag }}
