@@ -1,0 +1,227 @@
+---
+title: The Smart Site | Create the Bridge
+published: true
+seo_title: The Smart Site | Create the Bridge
+meta_description: This is a smart site from Create the Bridge, a product development company.
+meta_keywords: Keywords.
+---
+
+!!!
+%html
+  %head
+    %title {{ page.seo_title }}
+    %meta{:name => 'description', :content => '{{ page.meta_description }}'}
+    %meta{:name => 'keywords', :content => '{{ page.meta_keywords }}'}
+    %link{:href => "//smartsite.herokuapp.com/", :rel => "canonical"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "true", :name => "HandheldFriendly"}/
+    %meta{:content => "320", :name => "MobileOptimized"}/
+    %meta{:content => "initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "apple-touch-icon-144x144-precomposed.png", :name => "msapplication-TileImage"}/
+    %meta{:content => "#f5f5f5", :name => "msapplication-TileColor"}/
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
+    %meta{:content => "black", :name => "apple-mobile-web-app-status-bar-style"}/
+    %meta{:content => "on", "http-equiv" => "cleartype"}/
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    {{ 'all.css' | stylesheet_tag }}
+    {{ 'head.js' | javascript_tag }}
+    %link{:href => "//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css", :rel => "stylesheet"}/
+    %script{:src => "//maps.googleapis.com/maps/api/js?key=AIzaSyCWOsSfhTI_3lT02aBaQbBslPM-zIN6Ecc&sensor=true&libraries=geometry"}
+  %body.index
+    %main.main{:role => "main"}
+      %nav.alt-top-bar-container
+        %ul.links
+          %li.hvr-underline-reveal
+            %a{:href => "#features"} Features
+          %li.hvr-underline-reveal
+            %a{:href => "#gallery"} Gallery
+          %li.hvr-underline-reveal
+            %a{:href => "#call-to-action"} Contact
+          %li.hvr-underline-reveal
+            %a{:href => "#contact"} Location
+        .menu-items
+          %button.tcon.tcon-menu--arrow.tcon-menu--arrowup{"aria-label" => "toggle menu", :type => "button"}
+            %span.tcon-menu__lines{"aria-hidden" => "true"}
+            %span.tcon-visuallyhidden toggle menu
+          %a{:href => "//createthebridge.com"}
+            {% capture photo %}{% editable_file "logo" %}/samples/pages/bridge-icon.svg{% endeditable_file %}{% endcapture %}
+            %img.logo{:src => "{{ photo }}"}/
+      %nav.mobile
+        %a.logo{"data-scroll" => "", :href => "#home"} Smart Site
+        .nav-collapse
+          %ul
+            %li.menu-item.active
+              %a{"data-scroll" => "", :href => "#features"} Features
+            %li.menu-item
+              %a{"data-scroll" => "", :href => "#gallery"} Gallery
+            %li.menu-item
+              %a{"data-scroll" => "", :href => "#call-to-action"} Contact
+            %li.menu-item
+              %a{"data-scroll" => "", :href => "#contact"} Location
+
+      {% capture photo %}{% editable_file "header-background-image" %}/samples/pages/background.jpg{% endeditable_file %}{% endcapture %}
+      %section#header{"data-stellar-background-ratio" => "0.5", "data-stellar-vertical-offset" => "-40", style: "background: url('{{ photo | resize: '1960x' }}') no-repeat center center;"}
+        .header-container
+          {% editable_text 'header_text' %}
+          %h1 A SMARTER WEBSITE
+          %h4 Tell your story with a beautiful, result driven Smart Site. Delivered in 1 week.
+          {% endeditable_text %}
+          %a{:href => "#"}
+            %i.fa-3x.fa-angle-down
+
+      %section#features
+        {% block 'features' %}
+        {% editable_text 'features_text' %}
+        %h3 WHAT WE OFFER
+        %p
+          Templates were built with you in mind. Cut through the clutter and demonstrate the most important aspects of your business with these templates.
+        {% endeditable_text %}
+        .package-1.up-item
+          {% capture photo %}{% editable_file "package-1-image" %}/samples/pages/business.png{% endeditable_file %}{% endcapture %}
+          %img{:src => "{{ photo | resize: '150x150#' }}"}
+          {% editable_text 'package_1_description' %}
+          %p
+            Centered around your business.
+          {% endeditable_text %}
+        .package-2.up-item
+          {% capture photo %}{% editable_file "package-2-image" %}/samples/pages/design.png{% endeditable_file %}{% endcapture %}
+          %img{:src => "{{ photo | resize: '150x150#' }}"}
+          {% editable_text 'package_2_description' %}
+          %p
+            Beautiful, flawless design.
+          {% endeditable_text %}
+        .package-3.up-item
+          {% capture photo %}{% editable_file "package-3-image" %}/samples/pages/responsive.png{% endeditable_file %}{% endcapture %}
+          %img{:src => "{{ photo | resize: '150x150#' }}"}
+          {% editable_text 'package_3_description' %}
+          %p
+            Works on any device
+          {% endeditable_text %}
+        {% editable_text "call_to_action_button_text" %}
+        .cta-button
+          %a.button{:href => "#modal"} ORDER YOURS NOW
+        {% endeditable_text %}
+        {% endblock %}
+
+      %section#gallery
+        {% block 'gallery' %}
+        .image-container
+          {% capture photo %}{% editable_file "gallery-thumbnail-1" %}/samples/pages/1-th.jpg{% endeditable_file %}{% endcapture %}
+          %img{:height => "480", :src => "{{ photo }}", :width => "480"}/
+          %figcaption
+            {% capture photo %}{% editable_file "gallery-photo-1" %}/samples/pages/1.jpg{% endeditable_file %}{% endcapture %}
+            %a.strip{"data-strip-group" => "mygroup", :href => "{{ photo }}"}
+        .image-container
+          {% capture photo %}{% editable_file "gallery-thumbnail-2" %}/samples/pages/2-th.jpg{% endeditable_file %}{% endcapture %}
+          %img{:height => "480", :src => "{{ photo }}", :width => "480"}/
+          %figcaption
+            {% capture photo %}{% editable_file "gallery-photo-2" %}/samples/pages/2.jpg{% endeditable_file %}{% endcapture %}
+            %a.strip{"data-strip-group" => "mygroup", :href => "{{ photo }}"}
+        .image-container
+          {% capture photo %}{% editable_file "gallery-thumbnail-3" %}/samples/pages/3-th.jpg{% endeditable_file %}{% endcapture %}
+          %img{:height => "480", :src => "{{ photo }}", :width => "480"}/
+          %figcaption
+            {% capture photo %}{% editable_file "gallery-photo-3" %}/samples/pages/3.jpg{% endeditable_file %}{% endcapture %}
+            %a.strip{"data-strip-group" => "mygroup", :href => "{{ photo }}"}
+        .image-container
+          {% capture photo %}{% editable_file "gallery-thumbnail-4" %}/samples/pages/4-th.jpg{% endeditable_file %}{% endcapture %}
+          %img{:height => "480", :src => "{{ photo }}", :width => "480"}/
+          %figcaption
+            {% capture photo %}{% editable_file "gallery-photo-4" %}/samples/pages/4.jpg{% endeditable_file %}{% endcapture %}
+            %a.strip{"data-strip-group" => "mygroup", :href => "{{ photo }}"}
+        .image-container
+          {% capture photo %}{% editable_file "gallery-thumbnail-5" %}/samples/pages/5-th.jpg{% endeditable_file %}{% endcapture %}
+          %img{:height => "480", :src => "{{ photo }}", :width => "480"}/
+          %figcaption
+            {% capture photo %}{% editable_file "gallery-photo-5" %}/samples/pages/5.jpg{% endeditable_file %}{% endcapture %}
+            %a.strip{"data-strip-group" => "mygroup", :href => "{{ photo }}"}
+        .image-container
+          {% capture photo %}{% editable_file "gallery-thumbnail-6" %}/samples/pages/6-th.jpg{% endeditable_file %}{% endcapture %}
+          %img{:height => "480", :src => "{{ photo }}", :width => "480"}/
+          %figcaption
+            {% capture photo %}{% editable_file "gallery-photo-6" %}/samples/pages/6.jpg{% endeditable_file %}{% endcapture %}
+            %a.strip{"data-strip-group" => "mygroup", :href => "{{ photo }}"}
+        .image-container
+          {% capture photo %}{% editable_file "gallery-thumbnail-7" %}/samples/pages/7-th.jpg{% endeditable_file %}{% endcapture %}
+          %img{:height => "480", :src => "{{ photo }}", :width => "480"}/
+          %figcaption
+            {% capture photo %}{% editable_file "gallery-photo-7" %}/samples/pages/7.jpg{% endeditable_file %}{% endcapture %}
+            %a.strip{"data-strip-group" => "mygroup", :href => "{{ photo }}"}
+        .image-container
+          {% capture photo %}{% editable_file "gallery-thumbnail-8" %}/samples/pages/8-th.jpg{% endeditable_file %}{% endcapture %}
+          %img{:height => "480", :src => "{{ photo }}", :width => "480"}/
+          %figcaption
+            {% capture photo %}{% editable_file "gallery-photo-8" %}/samples/pages/8.jpg{% endeditable_file %}{% endcapture %}
+            %a.strip{"data-strip-group" => "mygroup", :href => "{{ photo }}"}
+        {% endblock %}
+
+      %section#call-to-action
+        {% block 'call_to_action' %}
+        {% editable_text 'call_to_action_heading' %}
+        %h3.cta-header GET YOURS FOR $99/MONTH
+        {% endeditable_text %}
+        {% editable_text "call_to_action_button_text" %}
+        .cta-button
+          %a.button{:href => "#modal"} CONTACT US
+        {% endeditable_text %}
+        {% endblock %}
+      %section#contact
+        {% block 'contact' %}
+        .content
+          {% editable_text 'contact_info' %}
+          %h3 CONTACT INFO
+          %ul
+            %li 205 W PARK AVE, PHARR TX 78577
+            %li HELLO@CREATETHEBRIDGE.COM
+            %li 512 640 2284
+            %li
+              %a{:href => "//maps.google.com/?q=205 W PARK AVE, PHARR TX 78577"} Get Directions
+          {% endeditable_text %}
+        #map
+      .remodal{"data-remodal-id" => "modal"}
+        %div
+          {% editable_text 'contact_form_title' %}
+          %h4 Contact Us to Schedule a Tour Today!
+          {% endeditable_text %}
+          %form#mandrill-form
+            %h5 Name
+            %input#name.full-width-input{:name => "name", :placeholder => "Name", :required => "required", :type => "text"}/
+            %h5 Email Address
+            %input#email.full-width-input{:name => "email", :placeholder => "Email", :required => "required", :type => "email"}/
+            %h5 Phone
+            %input#phone.full-width-input{:name => "telephone", :placeholder => "Phone", :type => "tel"}/
+            %h5 Message
+            %textarea#msg.full-width-input{:name => "message", :placeholder => "Message", :required => "required", :rows => "7"}
+            %input#submitbutton1.button{:style => "border: none", :type => "submit", :value => "SUBMIT"}/
+        {% endblock %}
+      %footer
+        {% block 'footer' %}
+        .footer-container
+          .company
+            {% editable_text 'site_title' %}
+            %h4 Smart Site
+            {% endeditable_text %}
+            {% editable_text 'copyright' %}
+            %p © Smart Site. All rights reserved.
+            {% endeditable_text %}
+          .contact
+            {% editable_text 'footer_contact' %}
+            %h4 Contact
+            %p A great way to contact us would be by email or phone.
+            {% endeditable_text %}
+          .social
+            {% editable_text 'social_media_title' %}
+            %h4 Social
+            {% endeditable_text %}
+            %ul.social
+              %li
+                %a{:href => "https://www.facebook.com/bridgedesigngroup"}
+                  %i.fa.fa-facebook-square
+              %li
+                %a{:href => "https://twitter.com/CreateTheBridge"}
+                  %i.fa.fa-twitter-square
+              %li
+                %a{:href => "https://instagram.com/createthebridge/"}
+                  %i.fa.fa-instagram
+        {% endblock %}
+    {{ 'body.js' | javascript_tag }}

@@ -1,0 +1,36 @@
+# Logfile created on 2015-04-29 18:27:07 -0500 by logger.rb/1.2.8
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/" at 2015-04-29 18:27:14 -0500[0m
+Detecting locale EN
+Found page "Home page" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 6.9ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-04-29 18:51:53 -0500
+* Reloaded "site", "content_types", "pages", "snippets", "content_entries", "translations" at 2015-04-29 18:52:21 -0500
+[0;97;49mStarted GET "/" at 2015-04-29 18:57:33 -0500[0m
+Detecting locale EN
+Found page "The Smart Site | Create the Bridge" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 116.5ms
+
+[0m
+[0;97;49mStarted GET "/" at 2015-04-29 19:00:05 -0500[0m
+Detecting locale EN
+Found page "The Smart Site | Create the Bridge" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 17.7ms
+
+[0m
+[0;97;49mStarted GET "/" at 2015-04-29 19:04:09 -0500[0m
+Detecting locale EN
+Found page "The Smart Site | Create the Bridge" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 58.5ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-04-29 19:14:49 -0500
+* Reloaded "pages", "snippets" at 2015-04-29 19:16:24 -0500
+* Reloaded "pages", "snippets" at 2015-04-29 19:17:38 -0500
