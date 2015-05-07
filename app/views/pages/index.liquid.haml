@@ -80,6 +80,8 @@ meta_keywords: Keywords.
           {% capture photo %}{% editable_file "package-1-image" %}/samples/pages/business.png{% endeditable_file %}{% endcapture %}
           %img{:src => "{{ photo | resize: '150x150#' }}"}
           {% editable_text 'package_1_description' %}
+          %h4
+            Business
           %p
             Centered around your business.
           {% endeditable_text %}
@@ -87,6 +89,8 @@ meta_keywords: Keywords.
           {% capture photo %}{% editable_file "package-2-image" %}/samples/pages/design.png{% endeditable_file %}{% endcapture %}
           %img{:src => "{{ photo | resize: '150x150#' }}"}
           {% editable_text 'package_2_description' %}
+          %h4
+            Design
           %p
             Beautiful, flawless design.
           {% endeditable_text %}
@@ -94,6 +98,8 @@ meta_keywords: Keywords.
           {% capture photo %}{% editable_file "package-3-image" %}/samples/pages/responsive.png{% endeditable_file %}{% endcapture %}
           %img{:src => "{{ photo | resize: '150x150#' }}"}
           {% editable_text 'package_3_description' %}
+          %h4
+            Responsive
           %p
             Works on any device
           {% endeditable_text %}
@@ -156,15 +162,16 @@ meta_keywords: Keywords.
         {% endblock %}
 
       %section#call-to-action
-        {% block 'call_to_action' %}
-        {% editable_text 'call_to_action_heading' %}
-        %h3.cta-header GET YOURS FOR $99/MONTH
-        {% endeditable_text %}
-        {% editable_text "call_to_action_button_text" %}
-        .cta-button
-          %a.button{:href => "#modal"} CONTACT US
-        {% endeditable_text %}
-        {% endblock %}
+        .call-to-action-container
+          {% block 'call_to_action' %}
+          {% editable_text 'call_to_action_heading' %}
+          %h3.cta-header GET YOURS FOR $99/MONTH
+          {% endeditable_text %}
+          {% editable_text "call_to_action_button_text" %}
+          .cta-button
+            %a.button{:href => "#modal"} CONTACT US
+          {% endeditable_text %}
+          {% endblock %}
       %section#contact
         {% block 'contact' %}
         .content
@@ -174,9 +181,9 @@ meta_keywords: Keywords.
             %li 205 W PARK AVE, PHARR TX 78577
             %li HELLO@CREATETHEBRIDGE.COM
             %li 512 640 2284
+            {% endeditable_text %}
             %li
               %a{:href => "//maps.google.com/?q=205 W PARK AVE, PHARR TX 78577"} Get Directions
-          {% endeditable_text %}
         #map
       .remodal{"data-remodal-id" => "modal"}
         %div
@@ -203,6 +210,7 @@ meta_keywords: Keywords.
             {% endeditable_text %}
             {% editable_text 'copyright' %}
             %p © Smart Site. All rights reserved.
+            %a{:href => "http://www.createthebridge.com"} Created by Create the Bridge
             {% endeditable_text %}
           .contact
             {% editable_text 'footer_contact' %}

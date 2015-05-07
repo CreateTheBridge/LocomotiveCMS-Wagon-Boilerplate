@@ -34,3 +34,124 @@ Found page "The Smart Site | Create the Bridge" [index]
 * Reloaded "pages", "snippets" at 2015-04-29 19:14:49 -0500
 * Reloaded "pages", "snippets" at 2015-04-29 19:16:24 -0500
 * Reloaded "pages", "snippets" at 2015-04-29 19:17:38 -0500
+[0;97;49mStarted GET "/" at 2015-05-07 00:28:19 -0500[0m
+Detecting locale EN
+Found page "The Smart Site | Create the Bridge" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 46.8ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon-precomposed.png" at 2015-05-07 00:28:25 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 9.0ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon.png" at 2015-05-07 00:28:25 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 6.5ms
+
+[0m
+[0;97;49mStarted GET "/" at 2015-05-07 00:37:05 -0500[0m
+Detecting locale EN
+Found page "The Smart Site | Create the Bridge" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 5.9ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon-precomposed.png" at 2015-05-07 00:37:09 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 5.9ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon.png" at 2015-05-07 00:37:09 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 6.4ms
+
+[0m
+[0;97;49mStarted GET "/" at 2015-05-07 00:46:04 -0500[0m
+Detecting locale EN
+Found page "The Smart Site | Create the Bridge" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 36.7ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon-precomposed.png" at 2015-05-07 00:46:09 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 9.3ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon.png" at 2015-05-07 00:46:09 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 9.0ms
+
+[0m
+[0;97;49mStarted GET "/" at 2015-05-07 01:04:56 -0500[0m
+Detecting locale EN
+Found page "The Smart Site | Create the Bridge" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 43.9ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon-precomposed.png" at 2015-05-07 01:05:02 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 8.3ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon.png" at 2015-05-07 01:05:02 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 6.8ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-05-07 01:08:55 -0500
+[0;97;49mStarted GET "/" at 2015-05-07 01:08:56 -0500[0m
+Detecting locale EN
+Found page "The Smart Site | Create the Bridge" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 37.9ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon-precomposed.png" at 2015-05-07 01:09:00 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 12.1ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon.png" at 2015-05-07 01:09:00 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 8.6ms
+
+[0m
+* Reloaded "pages", "snippets" at 2015-05-07 01:10:03 -0500
+[0;97;49mStarted GET "/" at 2015-05-07 01:10:03 -0500[0m
+Detecting locale EN
+Found page "The Smart Site | Create the Bridge" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 36.7ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon-precomposed.png" at 2015-05-07 01:10:04 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 5.9ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon.png" at 2015-05-07 01:10:04 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 8.8ms
+
+[0m
+[0;97;49mStarted GET "/" at 2015-05-07 01:10:11 -0500[0m
+Detecting locale EN
+Found page "The Smart Site | Create the Bridge" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 13.0ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon-precomposed.png" at 2015-05-07 01:10:12 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 8.2ms
+
+[0m
+[0;97;49mStarted GET "/apple-touch-icon.png" at 2015-05-07 01:10:12 -0500[0m
+Detecting locale EN
+[0;32;49mCompleted 404 Not Found in 10.4ms
+
+[0m
