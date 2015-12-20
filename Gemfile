@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'locomotivecms_wagon', '1.5.0'
+gem 'locomotivecms_wagon', '1.5.8'
 
 group :development do
   # Mac OS X
@@ -17,6 +17,6 @@ group :misc do
   gem 'sass'
   gem 'susy'
   gem 'normalize-scss'
+  gem 'modular-scale'
+  gem 'locomotivecms_liquid_extensions', github: 'locomotivecms/liquid_extensions'
 end
-
-

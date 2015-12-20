@@ -1,8 +1,8 @@
 development:
-  host: localhost:5000
-  email: kyndream@gmail.com
-  password: cocacola
-  api_key: dae60bcafc2ca03e49abd002c48244c7d4704ded
+  host: localhost:8080
+  # email: john@doe.net
+  # password: apassword
+  api_key: 23ea9e633b999347cb83750f2ade62f7f3b3ffcc
 staging:
   host: staging.example.com
   email: john@doe.net
