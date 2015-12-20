@@ -741,3 +741,6 @@ Found page "Home page" [index]
 [0;32;49mCompleted 200 OK in 1.7ms
 
 [0m
+unable to get an API token: Connection refused - connect(2) for "localhost" port 8080
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
