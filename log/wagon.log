@@ -705,3 +705,13 @@ Found page "Boilerplate" [index]
 
 [0m
 * Reloaded "pages", "snippets" at 2015-12-20 14:41:06 -0600
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/" at 2015-12-20 14:54:23 -0600[0m
+Detecting locale EN
+Found page "Home page" [index]
+  Rendered snippet styleguide
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 7.9ms
+
+[0m
