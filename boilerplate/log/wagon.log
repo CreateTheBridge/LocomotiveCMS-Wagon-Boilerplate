@@ -715,3 +715,29 @@ Found page "Home page" [index]
 [0;32;49mCompleted 200 OK in 7.9ms
 
 [0m
+[0;31;49m[Important] YUICompressor requires java to be installed. The JAVA_HOME variable should also be set.
+[0m
+[0;97;49mStarted GET "/" at 2015-12-20 15:03:37 -0600[0m
+Detecting locale EN
+Found page "Home page" [index]
+  Rendered snippet styleguide
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 8.0ms
+
+[0m
+[0;97;49mStarted GET "/" at 2015-12-20 15:03:50 -0600[0m
+Detecting locale EN
+Found page "Home page" [index]
+  Rendered snippet styleguide
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 5.2ms
+
+[0m
+[0;97;49mStarted GET "/" at 2015-12-20 15:04:21 -0600[0m
+Detecting locale EN
+Found page "Home page" [index]
+  Rendered snippet styleguide
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 1.7ms
+
+[0m
